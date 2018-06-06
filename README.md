@@ -1,4 +1,4 @@
-[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg)](https://hub.docker.com/r/equivalent/azure-test/)
+https://hub.docker.com/r/equivalent/azure-test/
 
 
 # Azure Appservices docker test
