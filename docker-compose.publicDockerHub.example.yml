@@ -6,9 +6,10 @@ services:
       context: ./
       dockerfile: Dockerfile
     environment:
-      - PG_USER=value_of_server_admin_login
-      - PG_PASS=xxxxxxxxxxxxxxx
-      - PG_HOST=value_of_server_name
+      - TEST_TEST=testtesttest
+      - PG_USER=value_of_server_admin_login # optional if you don't want to test postgres connection
+      - PG_PASS=xxxxxxxxxxxxxxx             # optional if you don't want to test postgres connection
+      - PG_HOST=value_of_server_name        # optional if you don't want to test postgres connection
     ports:
-      - "80:80"
+      - "80:80" # or this can be "3000:80" if your localhost machin blocks port 80
       - "2222:2222"
