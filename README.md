@@ -1,3 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg)](https://hub.docker.com/r/equivalent/azure-test/)
+
+
 # Azure Appservices docker test
 
 This is simple docker image for testing Azure setup on "Azure App Serices" for "Doker Containers".
@@ -173,4 +176,9 @@ app services > myappilation > diagnostics logs > docker container loggs > set to
 
 this will ensure logs are beeing captured
 
+## Versions
 
+```
+equivalent/azure-test:latest       2018-06-06
+equivalent/azure-test:v1           2018-06-06
+`''
