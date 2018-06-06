@@ -125,6 +125,8 @@ all you need to do is curl this link to reload docker image:
 `curl -X POST 'https://$my-app-service-name:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@my-app-service-name.scm.azurewebsites.net/docker/hook' -H '' -d ''`
 
 
+> if the link is hidden run `az webapp deployment container config --name name --resource-group myResourceGroup --enable-cd true` [more info](https://docs.microsoft.com/en-us/azure/app-service/containers/app-service-linux-ci-cd). Output will contain it
+
 **note !!**
 
 what you can do is that you can configure your ACR registry to call this
