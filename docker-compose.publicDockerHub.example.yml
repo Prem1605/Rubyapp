@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    image: "equivalent/azure-test:latest"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - PG_USER=value_of_server_admin_login
+      - PG_PASS=xxxxxxxxxxxxxxx
+      - PG_HOST=value_of_server_name
+    ports:
+      - "80:80"
+      - "2222:2222"
