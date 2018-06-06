@@ -53,7 +53,7 @@ docker-compose push
 ```
 
 
-## Setting Enviroment variables on App Serviece
+## Setting Enviroment variables on App Services
 
 ```
 MyAppServiceName > Application Settings 
@@ -175,6 +175,23 @@ app services > myappilation > diagnostics logs > docker container loggs > set to
 ```
 
 this will ensure logs are beeing captured
+
+## Testing Postgresql connection
+
+
+Set the  ENVironment variables PG_USER, PG_PASS, PG_HOST (how? look at section "Setting Enviroment variables on App Serviece")
+
+
+Then make sure you have `Allow access to Azure services` set to `on` in
+`Azure database for postgres > my-database > Sonnection Settings`
+
+
+now you should be able to:
+
+`curl https://my-application.azurewebsites.net/db`
+
+Error means it don't work, `Conection Success` mean it works !
+
 
 ## Versions
 
